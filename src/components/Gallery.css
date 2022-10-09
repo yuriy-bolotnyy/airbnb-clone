@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    text-align: center; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.gallery--image {
+    width: 90%;
+    max-width: 400px;
+    /* padding: 5%; */
+}
+
+.gallery--header {
+    align-self: center;
+}
+
+.gallery--text {
+    font-size:xx-large;
+    line-height: 1.2;
+}
