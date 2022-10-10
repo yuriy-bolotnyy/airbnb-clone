@@ -20,7 +20,7 @@ const Card = (props) => {
                             <FontAwesomeIcon icon={faStar} /> 
                         </span>
                         <span> {props.rating} </span>
-                        <span style={{color:"grey"}}> (6) USA</span>
+                        <span style={{color:"grey"}}> ({props.reviews}) USA</span>
                     {/* </p> */}
                     
                 </div>
