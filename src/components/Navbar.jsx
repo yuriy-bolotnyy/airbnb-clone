@@ -15,3 +15,16 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+// import zaferesImg from "../assets/zaferes.png"
+// import './Card.css'
+// // import "./components/Navbar.css"
+// // import logo from "./assets/Airbnb_Logo.svg"
+
+// const Card = () => {
+//     return (
+//         <div className="navbar">
+//             <nav>
+//                 <img src={zaferesImg} alt="logo"/>
