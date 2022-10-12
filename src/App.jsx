@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 import Cards from './components/Cards'
+import Contacts from './components/Contacts'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Gallery />
       <Cards />
+      <Contacts/>
     </div>
   )
 }

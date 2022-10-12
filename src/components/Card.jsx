@@ -7,10 +7,9 @@ const Card = (props) => {
     console.log(`src=${props.img}`)
     return (
         <div className="card">
-            {/* <div > */}
-                {/* <img src={zaferesImg} alt="zaferes" className="card--image"/> */}
+            <div >
                 <img src={props.img} alt="zaferes" className="card--image"/>
-            {/* </div> */}
+            </div>
 
             <div className="card--body">
 
