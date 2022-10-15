@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
-    console.log(`src=${props.img}`)
+    console.dir(`src=${props}`)
     let badgeText
     if (props.openSpots === 0) {
         badgeText = "SOLD OUT"
@@ -17,7 +17,7 @@ const Card = (props) => {
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
             <div >
-                <img src={props.img} alt={props.img} className="card--image"/>
+                <img src={props.coverImg} alt={props.coverImg} className="card--image"/>
             </div>
 
             <div className="card--body">
@@ -27,8 +27,8 @@ const Card = (props) => {
                         <span style={{color:"red"}}>
                             <FontAwesomeIcon icon={faStar} /> 
                         </span>
-                        <span> {props.rating} </span>
-                        <span style={{color:"grey"}}> ({props.reviews}) USA</span>
+                        <span> {props.stats.rating} </span>
+                        <span style={{color:"grey"}}> ({props.stats.reviewCount}) USA</span>
                     {/* </p> */}
                     
                 </div>
