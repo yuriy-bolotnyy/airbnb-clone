@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 .card {
     display: flex;
@@ -13,6 +13,8 @@
     /* margin: 1rem; */
 
     border: 5px dotted blue;
+
+    position: relative;
 }
 
 .card--image {
@@ -33,6 +35,16 @@
     
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     border: 5px dotted blue; */
+}
+
+.card--badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: rgb(240, 11, 11);
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }
 
 /* .card--rating {

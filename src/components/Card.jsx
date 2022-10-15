@@ -5,8 +5,17 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
     console.log(`src=${props.img}`)
+    let badgeText
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
+    // badgeText = ""
+
     return (
         <div className="card">
+            {badgeText && <div className="card--badge">{badgeText}</div>}
             <div >
                 <img src={props.img} alt={props.img} className="card--image"/>
             </div>

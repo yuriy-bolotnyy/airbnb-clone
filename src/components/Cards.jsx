@@ -4,9 +4,9 @@ import Card from "./Card"
 
 import "./Cards.css"
 
-import zaferesImg from "../assets/zaferes.png"
-import weddingImg from "../assets/wedding.png"
-import bikingImg from "../assets/biking.png"
+// import zaferesImg from "../assets/zaferes.png"
+// import weddingImg from "../assets/wedding.png"
+// import bikingImg from "../assets/biking.png"
 import data from "../data"
 
 const Cards = () => {
@@ -21,6 +21,7 @@ const Cards = () => {
                 location={item.location}
                 text={item.title}
                 price={item.price}
+                openSpots={item.openSpots}
             />
         )
     })   
@@ -34,14 +35,14 @@ const Cards = () => {
             
             {cards}
             
-             {/* <Card 
+            {/* <Card 
                 img={zaferesImg} 
                 rating="5.0" reviews="6" 
                 text="Life lessons with Katie Zaferes" 
                 price="$136"
-            />
+            /> */}
 
-            <Card 
+            {/* <Card 
                 img={weddingImg} 
                 rating="5.0" reviews="30" 
                 text="Learn wedding photography" 
@@ -53,7 +54,7 @@ const Cards = () => {
                 rating="4.8" reviews="2" 
                 text="Life lessons with Katie Zaferes" 
                 price="$50"
-            /> */}
+            />  */}
         </div>
     )
 }
